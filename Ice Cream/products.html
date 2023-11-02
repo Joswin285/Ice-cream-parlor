@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products - Ice Cream Parlor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="logo">Icey Creamz</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="btn">Home</a></li>
+                    <li><a href="products.html" class="btn">Products</a></li>
+                    <li><a href="aboutus.html" class="btn">About Us</a></li>
+                    <li><a href="contact.html" class="btn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="all-products">
+        <div class="products-grid">
+            <section class="featured-products">
+                <h2>Featured Products</h2>
+                <div class="products-container">
+                    <div class="product">
+                        <img src="images/chocobliss.jpg" alt="Flavor 1" width="300">
+                        <h3>Delicious Chocolate Bliss</h3>
+                        <p>A rich, creamy blend of premium cocoa for the <br>ultimate chocolate indulgence.</p>
+                        <span class="price">₹200</span>
+                        <br>
+                        <a href="chocolatebliss.html" class="btn">Buy</a>
+                    </div>
+                    <div class="product">
+                        <img src="images/Homemade Pistachio Ice Cream.jpg" alt="Flavor 2" width="300">
+                        <h3>Pistachio Punch</h3>
+                        <p>Fresh, hand-picked strawberries creating a taste of <br>summer in every bite.</p>
+                        <span class="price">₹180</span>
+                        <br>
+                        <a href="pistachiopunch.html" class="btn">Buy</a>
+                    </div>
+                    <div class="product">
+                        <img src="images/74934a3c-479e-43eb-90aa-801641136b79.jpg" alt="Flavor 3" width="300">
+                        <h3>Choco Smoothie Ice-Cream</h3>
+                        <p>Creamy delight, Choco smoothie indulgence,<br> pure satisfaction.</p>
+                        <span class="price">₹210</span>
+                        <br>
+                        <a href="chocosmoc.html" class="btn">Buy</a>
+                    </div>
+                    <div class="product">
+                        <img src="images/Blackberry Ice Cream.jpg" alt="Flavor 4" width="300">
+                        <h3>Berry Blast</h3>
+                        <p>Hand-picked berries offering a taste of summer in<br> every delightful scoop of berry blast ice cream.</p>
+                        <span class="price">₹190</span>
+                        <br>
+                        <a href="berryblast.html" class="btn">Buy</a>
+                    </div>
+                    <div class="product">
+                        <img src="images/Pineapple Ice Cream.jpg" alt="Pineapple Delight" width="300">
+                        <h3>Pineapple Delight</h3>
+                        <p>Every spoonful of pineapple delight ice cream<br> delivers a taste of summer with its hand-picked,<br> tropical pineapple goodness.</p>
+                        <span class="price">₹150</span>
+                        <br>
+                        <a href="pineappledelight.html" class="btn">Buy</a>
+                    </div>
+                </div>
+            </section>
+            
+            
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Icey Creamz</p>
+            <div class="social-links">
+                <a href="#" class="btn-social">Facebook</a>
+                <a href="#" class="btn-social">Instagram</a>
+                <a href="#" class="btn-social">Twitter</a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Get all the products
+        const products = document.querySelectorAll('.product');
+      
+        products.forEach(product => {
+          product.addEventListener('mouseover', () => {
+            // Create a larger frame for the hovered ice cream
+            product.style.transform = 'scale(1.1)'; // Enlarge the hovered product
+            product.style.zIndex = '1'; // Bring it to the front
+            product.style.transition = 'transform 0.3s ease';
+          });
+      
+          product.addEventListener('mouseout', () => {
+            // Reset back to normal size when the mouse moves away
+            product.style.transform = 'scale(1)';
+            product.style.zIndex = 'initial';
+            product.style.transition = 'transform 0.3s ease';
+          });
+        });
+      </script>
+</body>
+</html>

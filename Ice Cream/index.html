@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Icey Creamz</title>
+    <link rel="stylesheet" href="styles.css">
+    <head>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+        <style>
+            .logo {
+                font-family: 'Shadows Into Light', cursive;
+            }
+        </style>
+    </head>
+    
+    
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="logo">Icey Creamz</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="btn">Home</a></li>
+                    <li><a href="products.html" class="btn">Products</a></li>
+                    <li><a href="aboutus.html" class="btn">About Us</a></li>
+                    <li><a href="contact.html" class="btn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content-section">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Our Delicious Ice Cream World!</h1>
+                <p>Explore our flavors and experience pure joy in every scoop!</p>
+                <a href="products.html" class="btn hero-btn">Explore Our Flavors</a>
+            </div>
+        </section>
+
+        <section class="featured-products">
+            <h2>Featured Products</h2>
+            <div class="products-container">
+                <div class="product">
+                    <img src="images/chocobliss.jpg" alt="Flavor 1" width="300">
+                    <h3>Delicious Chocolate Bliss</h3>
+                    <p>A rich, creamy blend of premium cocoa for the<br> ultimate chocolate indulgence.</p>
+                    <a href="chocolatebliss.html" class="btn">Buy</a>
+                </div>
+                <div class="product">
+                    <img src="images/Homemade Pistachio Ice Cream.jpg" alt="Flavor 2" width="300">
+                    <h3>Pistachio Punch</h3>
+                    <p>Fresh, hand-picked strawberries creating a <br>taste of summer in every bite.</p>
+                    <a href="pistachiopunch.html" class="btn">Buy</a>
+                </div>
+                <div class="product">
+                    <img src="images/74934a3c-479e-43eb-90aa-801641136b79.jpg" alt="Flavor 3" width="300">
+                    <h3>Choco Smoothie Ice-Cream</h3>
+                    <p>Creamy delight,Choco smoothie indulgence, pure satisfaction.</p>
+                    <a href="chocosmoc.html" class="btn">Buy</a>
+                </div>
+                <div class="product">
+                    <img src="images/Blackberry Ice Cream.jpg" alt="Flavor 4" width="300">
+                    <h3>Berry Blast</h3>
+                    <p>Hand-picked berries offering a taste of <br>summer in every delightful scoop of berry<br>blast ice cream.</p>
+                    <a href="berryblast.html" class="btn">Buy</a>
+                </div>
+                <div class="product">
+                    <img src="images/Pineapple Ice Cream.jpg" alt="Pineapple Delight" width="300">
+                    <h3>Pineapple Delight</h3>
+                    <p>Every spoonful of pineapple delight ice<br>cream delivers a taste of summer with its<br> hand-picked, tropical pineapple goodness.</p>
+                    <a href="pineappledelight.html" class="btn">Buy</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="events-offers">
+            <div class="events-content">
+                <h2>Events & Offers</h2>
+                <div class="event">
+                    <img src="images/How to Throw the Best Ice Cream Social Party.jpg" alt="Special Event" width="300">
+                    <h3>Special Tasting Event</h3>
+                    <p>Join us this weekend for a special ice cream tasting event! Try our new flavors and get 20% off on all purchases.</p>
+                </div>
+                <div class="event">
+                    <img src="images/23aba64c-1254-49ff-8085-16e664e2c4aa.jpg" alt="Discount Offers" width="300">
+                    <h3>Limited-time Discounts</h3>
+                    <p>Don't miss out on our limited-time offers! Buy one, get one free on selected flavors.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Icey Creamz</p>
+            <div class="social-links">
+                <a href="#" class="btn-social">Facebook</a>
+                <a href="#" class="btn-social">Instagram</a>
+                <a href="#" class="btn-social">Twitter</a>
+            </div>
+        </div>
+    </footer>
+    
+<script>
+    // Get all the products
+    const products = document.querySelectorAll('.product');
+  
+    products.forEach(product => {
+      product.addEventListener('mouseover', () => {
+        // Create a larger frame for the hovered ice cream
+        product.style.transform = 'scale(1.1)'; // Enlarge the hovered product
+        product.style.zIndex = '1'; // Bring it to the front
+        product.style.transition = 'transform 0.3s ease';
+      });
+  
+      product.addEventListener('mouseout', () => {
+        // Reset back to normal size when the mouse moves away
+        product.style.transform = 'scale(1)';
+        product.style.zIndex = 'initial';
+        product.style.transition = 'transform 0.3s ease';
+      });
+    });
+  </script>
+  
+</body>
+</html>

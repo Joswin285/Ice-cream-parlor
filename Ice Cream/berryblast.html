@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Delicious Chocolate Bliss | Icey Creamz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1 class="logo">Icey Creamz</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="btn">Home</a></li>
+                    <li><a href="products.html" class="btn">Products</a></li>
+                    <li><a href="aboutus.html" class="btn">About Us</a></li>
+                    <li><a href="contact.html" class="btn">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content-section">
+        <section class="flavor-details">
+            <div class="product">
+                <img src="images/Blackberry Ice Cream.jpg" alt="Flavor 4" width="300">
+                <h3>Berry Blast</h3>
+                <p>Hand-picked berries offering a taste of summer in every delightful scoop of berry blast ice cream.</p>
+                <span class="price">₹190</span>
+                <p>Available Sizes: Small, Medium, Large</p>
+                <p>Add to Cart:</p>
+                <form action="cart.php" method="post">
+                    <label for="size">Size:</label>
+                    <select id="size" name="size">
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
+                    <a href="trial.html" class="btn">Buy</a>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Icey Creamz</p>
+            <div class="social-links">
+                <a href="#" class="btn-social">Facebook</a>
+                <a href="#" class="btn-social">Instagram</a>
+                <a href="#" class="btn-social">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,371 @@
+/* Colors */
+:root {
+    --light-background: #f7f7f7; /* Light background color */
+    --dark-background: #333; /* Dark background color */
+    --accent-color: #c89432; /* Accent color */
+    --beige: #f5f5dc; /* Beige */
+    --light-brown: #b5651d; /* Light Brown */
+    --light-green: #90ee90; /* Light Green */
+    --light-yellow: #ffffcc; /* Light Yellow */
+}
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: var(--dark-background);
+    background-color: var(--light-background);
+}
+
+header {
+    background-color: var(--accent-color);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.content-section {
+    background: linear-gradient(to bottom, var(--light-background) 50%, var(--dark-background) 50%);
+    padding: 20px;
+    margin: 20px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ff7f00; /* Lighter shade on hover */
+}
+
+.btn-social {
+    display: inline-block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: var(--accent-color);
+    background-color: white;
+    border: 2px solid var(--accent-color);
+    border-radius: 30px;
+    transition: color 0.3s, background-color 0.3s;
+    margin: 5px;
+}
+
+.btn-social:hover {
+    color: white;
+    background-color: var(--accent-color);
+}
+
+/* Additional CSS for Enhanced Design */
+
+/* Background Gradient */
+body {
+    background: linear-gradient(to right, var(--light-yellow), var(--beige));
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-background);
+}
+
+/* Header Styling */
+header {
+    background-color: var(--accent-color);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero {
+    background-image: url('images/Dark\ Chocolate\ Ice\ cream.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff; /* Text color for better contrast */
+}
+.hero-content {
+    z-index: 1; /* Ensures the content is on top of the background */
+}
+
+
+
+
+
+
+/* Featured Products Section Styling */
+.featured-products {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px 0;
+}
+
+.products-container {
+    display: inline-flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.product {
+    background-color: var(--beige);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    flex: 0 0 auto;
+}
+
+/* Overlay Background and Buttons Styling */
+.overlay {
+    position: relative;
+    width: 100%;
+    background-image: url('images/Premium_Photo_Various_of_ice_cream_flavor_ball_isolate_on_white_background.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+    margin-top: -50px; /* Adjust to overlap with the products */
+}
+
+.overlay-content {
+    text-align: center;
+    color: #fff;
+}
+
+.overlay-content h3 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.overlay-content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.overlay-content .btn {
+    margin: 0 10px;
+}
+
+/* Footer Styling */
+footer {
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Events & Offers Section Styling */
+.events-offers {
+    background-color: var(--light-yellow);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.events-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.event {
+    background-color: var(--light-brown);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+}
+
+.event img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.event h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #f6e4ee;
+}
+
+.event p {
+    font-size: 16px;
+    color: #e3d1db;
+}
+
+
+
+/* About Us Section Styling */
+.about-us {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-us-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.about-us-content h2 {
+    color: var(--accent-color);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.about-us-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+
+/* Contact Us Section Styling */
+.contact-us {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-us-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contact-us-content h2 {
+    color: var(--accent-color);
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact-us-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.contact-us-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-us-content ul li {
+    margin-bottom: 10px;
+}
+
+.about-us {
+    margin: 40px 0;
+}
+
+.about-us-content {
+    text-align: left;
+}
+
+.about-us-content p {
+    margin-bottom: 15px;
+}
+
+.all-products {
+    margin: 40px 0;
+}
+
+.products-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.product {
+    width: 300px;
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.product img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.product h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.product p {
+    font-size: 14px;
+}
+
+.contact-info {
+    margin: 40px 0;
+}
+
+.contact-details {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-details p {
+    margin-bottom: 15px;
+}
+
+.logo {
+    font-family: 'Bangers', cursive;
+    text-align: center;
+    color: #7ce22df5; /* font color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adding a shadow effect */
+}
